@@ -4,10 +4,9 @@
       text-center
       wrap
     >
-    <v-flex>
+    <v-flex text-center mb-2 xs12>
         <h1>HOST OPTIONS</h1>
     </v-flex>
-    <v-divider />
     <v-flex>
         <v-select
           :items="puzzletype"
@@ -24,11 +23,11 @@
           label="Difficulty"
         ></v-select>
     </v-flex>
-    <v-flex>
-        <v-switch v-model="traitor" label="traitor (only >= 5 players)">
-        </v-switch>
+    <v-flex text-center>
+        <v-checkbox v-model="traitor" label="traitor (only >= 5 players)">
+        </v-checkbox>
     </v-flex>
-     <v-btn block large primary to="/qr">Start Game</v-btn>
+     <v-btn block large primary color="info" to="/qr">Start Game</v-btn>
     </v-layout>
   </v-container>
 </template>
